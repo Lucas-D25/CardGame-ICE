@@ -39,20 +39,22 @@ public class CardTrick {
         
         Scanner scan = new Scanner(System.in);
         
-        Card d = new Card();
+//        Card d = new Card();
+//        
+//        System.out.println("Input a card value from 1-13: ");
+//        int cardValue = scan.nextInt();
+//        d.setValue(cardValue);
+//        
+//        System.out.println("Input a Suit Hearts, Clubs, Spades, Diamonds: ");
+//        String suitInput = scan.next();
+//        d.setSuit(suitInput);
         
-        System.out.println("Input a card value from 1-13: ");
-        
-        int cardValue = scan.nextInt();
-        d.setValue(cardValue);
-        
-        System.out.println("Input a Suit Hearts, Clubs, Spades, Diamonds: ");
-        
-        String suitInput = scan.next();
-        d.setSuit(suitInput);
+        Card luckyCard = new Card();
+        luckyCard.setValue(5);
+        luckyCard.setSuit("Clubs");
         
         for (int i = 0; i < magicHand.length; i++) {
-            if (magicHand[i].getSuit().equals(d.getSuit()) && magicHand[i].getValue() == d.getValue()){
+            if (magicHand[i].getSuit().equals(luckyCard.getSuit()) && magicHand[i].getValue() == luckyCard.getValue()){
                 flag = true;
                 break;
             }
@@ -64,10 +66,6 @@ public class CardTrick {
         else {
             System.out.println("No Match!");
         }
-
-        Card luckyCard = new Card();
-            luckyCard.setValue(5);
-            luckyCard.setSuit(Clubs);
     }
     
 }
