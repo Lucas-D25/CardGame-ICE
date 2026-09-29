@@ -64,6 +64,10 @@ public class CardTrick {
         else {
             System.out.println("No Match!");
         }
+
+        Card luckyCard = new Card();
+            luckyCard.setValue(5);
+            luckyCard.setSuit(Clubs);
     }
     
 }
