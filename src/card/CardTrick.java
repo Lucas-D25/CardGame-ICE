@@ -51,7 +51,7 @@ public class CardTrick {
         
         Card luckyCard = new Card();
         luckyCard.setValue(5);
-        luckyCard.setSuit("Clubs");
+        luckyCard.setSuit("Diamonds");
         
         for (int i = 0; i < magicHand.length; i++) {
             if (magicHand[i].getSuit().equals(luckyCard.getSuit()) && magicHand[i].getValue() == luckyCard.getValue()){
